@@ -1,6 +1,14 @@
 @media (max-width: 1200px)
   .container
     width: 90%
+  .slider
+    width: 600px
+  .swiper
+    &-slide
+      &__image
+        width: 100%
+        height: 100%
+        object-fit: cover
 @media (max-width: 992px)
   .container
     max-width: 700px
@@ -13,15 +21,42 @@
     &__search
       margin-left: auto
     &-menu
-      width: 675px //костыль ?
       padding-top: 22px
       padding-bottom: 22px
+      padding-right: 29px
       &__link
         font-size: 12px
         line-height: 15px
-.search
-  &__input
-    width: 340px
+  .search
+    &__input
+      width: 340px
+  .hotel
+    &-grid
+      flex-direction: column
+    &__slider
+      margin-bottom: 30px
+    &-right
+      flex-direction: row
+  .slider
+    width: 100%
+@media (max-width: 768px)
+  .container
+    width: 700px
+  .logo
+    margin-bottom: 5px
+  .search
+    &__input
+      padding: 12px 0 12px 32px
+  .hotel
+    margin-top: 0
+  .navbar
+    &-menu
+      padding-right: 21px
+    &__search
+      margin-right: 73px
+  .user
+    &__name
+      padding: 2px 1px 0 0
 @media (max-width: 767px)
   .container
     max-width: 576px
@@ -29,6 +64,8 @@
   .navbar
     &-menu, &__user, &__search,
       display: none
+    &-bottom
+
   .menu
     &-button
       display: flex
