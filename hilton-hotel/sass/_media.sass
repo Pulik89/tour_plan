@@ -1,0 +1,314 @@
+@media (max-width: 1200px)
+  .container
+    max-width: 960px
+  .hotel
+
+    &-slider
+      width: 590px
+  .swiper
+    &-slide
+      &__image
+        height: 100%
+        object-fit: cover
+  .swiper
+    &-slide
+      &__image
+        width: 100%
+        height: 100%
+        object-fit: cover
+  .card
+    width: 230px
+    height: 230px
+@media (max-width: 992px)
+  .container, .newsletter-wrapper
+    max-width: 700px
+  .logo
+    width: 132px
+  .navbar
+    &-top
+      padding-top: 30px
+      padding-bottom: 30px
+    &__search
+      margin-left: auto
+    &-menu
+      padding-top: 22px
+      padding-bottom: 22px
+      &__link
+        font-size: 12px
+        line-height: 15px
+  .search
+    &__input
+      width: 340px
+    &-grid
+      flex-direction: column
+    &__slider
+      width: 100%
+      margin-bottom: 30px
+    &-right
+      flex-direction: row
+  .hotel
+    margin-bottom: 58px important
+    &-grid
+      display: flex
+      flex-direction: column
+    &-slider
+      width: 100%
+      margin-bottom: 30px
+      &__image
+        width: 100%
+        height: 100%
+        object-fit: cover
+    &-right
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+  .booking
+    width: 340px
+  .slider
+    width: 100%
+  .map
+    width: 340px
+
+  .reviews
+    padding-bottom: 60px
+    &-slider
+      &__profile
+        margin-bottom: 26px
+      &__item
+        max-width: 580px
+        padding: 0 60px 30px 64px
+      &__date
+        margin-bottom: 0
+      &__button
+        top: 48%
+        &--prev
+          left: 0
+        &--next
+          right: 0
+    &__title
+      font-size: 30px
+      line-height: 38px
+      margin-bottom: 50px
+  .activities
+    &-wrapper
+      flex-wrap: wrap
+
+    &__card
+      margin-bottom: 20px
+
+  .card
+    width: 340px
+    height: 250px
+@media (max-width: 767px)
+  .container
+    min-width: 560px
+    width: 92%
+  .navbar
+    &__search,
+    &-menu,
+    &__user
+      display: none
+  .menu
+    &-button
+      display: flex
+      width: 16px
+      height: 11px
+      padding: 0
+      align-items: center
+      justify-content: space-between
+      flex-direction: column
+      border: none
+      background-color: #fff
+      cursor: pointer
+      &__line
+        width: 16px
+        height: 1px
+        background-color: $text-color
+  .stars
+    flex-basis: 100%
+    flex-direction: row
+    //&-name
+      //flex-basis: 100%
+    &-wrapper
+      justify-content: space-between
+    &-info
+      &__text
+        width: 100%
+      &__name
+        margin-top: 4px
+        margin-bottom: 0
+      &__rating
+        display: none
+
+  .hotel
+    &-name
+      flex-basis: auto
+    &-wrapper
+      justify-content: end
+    &-info
+      display: flex
+      justify-content: center
+      &__rating
+        //display: none
+      &__text
+        width: 100%
+    &-right
+      flex-direction: row
+      &__offer
+        order: -1
+        margin-left: 0
+      &__text
+        width: 100%
+    &-slider
+      height: 350px
+    &-right
+      flex-direction: column
+      min-height: 450px
+
+  .booking
+    width: 100%
+
+  .map
+    width: 100%
+  .newsletter
+    &-wrapper
+      min-width: 576px
+      width: 92%
+      flex-direction: column
+      align-items: start
+      //align-items: flex-start
+  .reviews
+    padding-bottom: 50px
+    &__title
+      width: 80%
+      font-size: 18px
+      line-height: 23px
+      margin: -5px auto 42px
+    &-slider
+      &__item
+        padding: 0 30px 30px
+        &::after, &::before
+          display: none
+      &__button
+        top: 32px
+        &--prev
+          left: 50%
+          margin-left: -65px
+          transform: translate(-50%, 0)
+        &--next
+          right: 50%
+          margin-right: -65px
+          transform: translate(50%, 0)
+
+  .card
+    width: 49%
+    height: 230px
+@media ( max-width: 575px )
+  .container, .newsletter-wrapper
+    min-width: 90%
+  .hotel
+    &-info
+      &__rating
+        display: none
+  .menu
+    &-button
+      display: flex
+      width: 16px
+      height: 11px
+      padding: 0
+      align-items: center
+      justify-content: space-between
+      flex-direction: column
+      border: none
+      background-color: #fff
+      cursor: pointer
+      &__line
+        width: 16px
+        height: 1px
+        background-color: $text-color
+  .stars
+    //flex-basis: 16%
+  .slider
+    height: 250px
+  .hotel
+    &__slider
+      margin-bottom: 20px
+  .subscribe
+    width: 100%
+  .newsletter
+    &-title
+      font-size: 20px
+      line-height: 25px
+      &__strong
+        font-size: 30px
+        line-height: 38px
+
+  .card
+    width: 100%
+@media (max-width: 380px)
+  .hotel
+    &__slider
+      max-width: 340px
+      max-height: 179px
+    &-info
+      &__offer
+        order: -1
+        margin-left: 0
+  .stars
+    max-width: 50px
+    margin-left: 236px
+  .activities
+    &__title
+      font-size: 18px
+      line-height: 23px
+      margin-bottom: 13px
+      //margin-left: 0px
+  .card
+    width: 100%
+    height: 255px
+  .card-1
+    order: 1
+  .card-2
+    order: 3
+  .card-3
+    order: 2
+  .card-4
+    order: 4
+@media ( max-width: 330px )
+  .reviews
+    &__title
+      padding-left: 7px
+    &-slider
+      &__item
+        max-height: 438px
+        padding: 0 29px 36px 33px
+      &__profile
+        margin-bottom: 28px
+      &__button
+        &--prev
+          left: 40%
+        &--next
+          right: 42%
+  .activities
+    &__title
+      margin-left: 0
+@media ( max-width: 320px )
+  .stars
+    display: none
+  .hotel
+    &__slider
+      height: 179px
+  .booking
+    height: 210px
+  .map
+    height: 173px
+  .card
+    width: 280px
+    height: 255px
+
+  .activities
+    &-wrapper
+      padding: 0
+      justify-content: space-around
+    &__title
+      margin-left: 10px
